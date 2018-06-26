@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    # this is where the user model retrieves a list of the users from the database
     @users = User.all
   end
 
