@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   def show
     # find the user record
     @user = User.find(params[:id])
+    # find the first micropost associated with that user
     @micropost = @user.microposts.first
   end
 
