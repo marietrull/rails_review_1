@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
 		render html: "Hello, World!"
 	end
 
+	def goodbye
+		render html: "Goodbye, World!"
+	end
+
 end
 
 
